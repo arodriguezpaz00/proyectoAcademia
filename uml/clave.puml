@@ -1,0 +1,12 @@
+@startuml
+skinparam BackgroundColor palegreen
+
+rectangle "Formulario de Inicio de Sesión" {
+    "Login: pepe" as login
+    "Password: ***" as password
+    
+    [Entrar] 
+    [Borrar]
+}
+
+@enduml

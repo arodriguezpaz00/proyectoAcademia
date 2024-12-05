@@ -1,0 +1,15 @@
+@startuml enlaces
+[*] --> login
+login : clave
+
+state ENLACE {
+    state PROFESOR : CON RESTRICCIONES
+    state SECRETARIA : CON ALGUNAS RESTRICCIONES
+    state ADMINISTRACION : SIN RESTRICCIONES
+}
+
+login --> ENLACE : Se dirige a las páginas
+ENLACE --> WEB
+
+WEB --> [*]
+@enduml
